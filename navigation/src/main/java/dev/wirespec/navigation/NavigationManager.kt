@@ -39,7 +39,7 @@ class NavigationManager {
 
             val navInfo = NavigationInfo(
                 screen = screenInfo.screen,
-                viewmodel = screenInfo.viewmodel?.newInstance() as ViewModel
+                viewmodel = screenInfo.viewmodel?.newInstance() as ViewModel?
             )
 
             navStack.add(navInfo)
